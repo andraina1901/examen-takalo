@@ -1,0 +1,228 @@
+main {
+    display: flex;
+    padding: 3%;
+    gap: 3%;
+}
+
+main > .main-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 5%
+}
+
+main > .main-left > .up {
+    padding: 10% 0% 10% 15%;
+    gap: 18px;
+}
+
+main > .main-left > .up ul {
+    display: flex;
+    margin-left: 7%;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.1em;
+}
+
+main > .main-left > .up ul a {
+    color: black;
+}
+
+main > .main-left > .down {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(49, 91, 153);
+}
+
+.up > h1{
+    font-weight: lighter;
+}
+.up > h1,
+.down > .content > h2,
+.tableau > h1 {
+    color: rgb(49, 91, 153);
+}
+
+main .box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px 1px #6464640d;
+}
+
+main > .main-left > .down .content {
+    padding: 10% 0% 10% 15%;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+main > .main-left > .down > h3 {
+    padding: 7% 0% 6% 15%;
+    color: white;
+}
+
+main > .main-right {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.main-right > .tableau {
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+
+main > .main-right > .tableau > h1 {
+    padding: 3% 0% 1% 9%;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.tableau-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 4% 6% 4%;
+    
+}
+
+.tableau-content > .cols {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+}
+
+.tableau-content > .values {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tableau-content > div.values:not(:last-child) {
+    border-bottom: 1px solid #80808070;
+    padding: 3% 0%;
+
+}
+
+.tableau-content > div.values:last-child {
+    padding: 3% 0% 0%;
+}
+
+.icon-plus {
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+    width: 3em;
+    height: 3em;
+    background-color: rgb(49, 91, 153);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.icon-plus > span {
+    font-size: 1.3em;
+    color: white;
+}
+
+.icon-plus.active {
+    transform: rotate(135deg);
+    z-index: 5;
+}
+
+.formular {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.formular.active {
+    display: flex;
+}
+
+.formular.active > .clone-body {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(5px);
+}
+
+.formular > .content > h1 {
+    color: rgb(49, 91, 153);
+}
+
+.formular.active > .content {
+    display: flex;
+    width: 25%;flex-direction: column;
+    padding: 2% 3%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px 1px #6464640d;
+    position: relative;
+    z-index: 1;
+    gap: 25px;
+    transform: translateX(0);
+    opacity: 1;
+    animation: animate1 .5s;
+}
+
+@keyframes animate1 {
+    from {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.formular.active > .content > form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formular.active > .content > form .field {
+    display: flex;
+    flex-direction: column;
+}
+
+.formular.active > .content > form > .field.group {
+    flex-direction: row;
+    gap: 25px;
+}
+
+.formular.active > .content > form .field:not(.group) {
+    gap: 10px;
+    width: 100%;
+}
+
+.formular.active > .content > form .field > input:not([type="submit"]),
+.formular.active > .content > form .field > select {
+    background-color: #f3f3f3;
+    outline: none;
+    padding: 11px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formular.active > .content > form .field > input[type="submit"] {
+    background-color: rgb(49, 91, 153);
+    padding: 11px 10px;
+    color: white;
+    border: none;
+    width: 31%;
+    border-radius: 5px;
+}

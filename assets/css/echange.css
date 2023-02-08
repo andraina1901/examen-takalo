@@ -1,0 +1,149 @@
+#echange{
+    width: 100%;
+    height: 70%;
+    /* background-color: red; */
+}
+
+.recu{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.test{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+#echange .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#echange .recu{
+    width: 100%;
+    /* height: 70%; */
+}
+
+#echange .envoye{
+    /* width: 100%; */
+    /* background-color: green; */
+}
+
+.envoye-info{
+    width: 100%;
+    height: 97%;
+    padding: 10px 10px 10px 10px;
+    /* background-color: pink; */
+}
+
+.envoye-texte{
+    width: 100%;
+    height: 5%;
+    /* background-color: aliceblue; */
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.envoye-info-contenu{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.envoye-inventaire{
+    width: 100%;
+    height: 95%;
+    /* background-color: aquamarine; */
+    padding: 20px 20px 20px 20px;
+}
+
+
+.envoye-inventaire-info{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: block;
+    /* background-color: rgb(58, 42, 227); */
+}
+
+#echange .objet{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 45%;
+    height: 20%;
+    /* background-color: blueviolet; */
+}
+
+#echange .objet-info{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    background-color: #6662ff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#echange .objet-info img{
+    width:38%;
+}
+
+#echange .envoye-nom{
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+/* #echange .objet-info{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+} */
+
+#echange .objet-info:hover{
+    background-color: #474742;
+    transition: 0.5s;
+    color: white;
+}
+
+#echange .envoye-texte button{
+    background-color: rgb(47, 212, 47);
+    float: bottom;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px 20px 20px;
+}
+
+input[type="checkbox"]{
+    height: 0;
+    width: 0;
+}
+
+.echange img{
+    width: 200px;
+    height: 200px;
+}
+
+#ec{
+    display: flex;
+    
+}
+#right{
+    width: 25%;
+    height: 45%;
+}
+#echa,#env {
+    width: 30%;
+}

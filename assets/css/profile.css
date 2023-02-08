@@ -1,0 +1,45 @@
+#profile{
+    width: 100%;
+    display: flex;
+}
+
+#profile .profile-left{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+#profile .profile-right{
+    width: 70%;
+    /* background-color: brown; */
+}
+#profile .ajout-produit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3% 5%;
+}
+
+#profile  h2{
+    text-align: center;
+}
+#profile .ajout-produit input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+#profile .ajout-produit .field{
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+#profile .ajout-produit .field .field-name{
+    width: 100px;
+}
+#profile button{
+    border: none;
+    padding: 2% 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 153, 255, 0.603);
+}

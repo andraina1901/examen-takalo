@@ -1,0 +1,201 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.up-div {
+    display: flex;
+    gap: 3%;
+}
+
+.up-div> .up-left{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+.up-div> .up-right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.up-div> .up-left> .three-card{
+    display: flex;
+    gap: 3%;
+    margin-bottom: 5%;
+}
+.up-div> .up-left> .three-card> .one-card{
+    display: flex;
+    width: 35%;
+    gap: 3%;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 2%;
+}
+.up-div> .up-left> .three-card> .one-card> .text> h4{
+    margin-bottom: 5%;
+    font-size: 14px;
+}
+.up-div> .up-left> .three-card> .one-card> .text> p{
+    color: grey;
+    font-size: 13px;
+    font-weight: bold;
+}
+.up-div> .up-left> .three-card> .one-card> .icon> i{
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform .9S;
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-user-circle{
+    color:#667fda;
+    transform: rotateY(0deg);
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-hand-paper{
+    color: #4aa228bd;
+    transform: rotateZ(0deg);
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-book-open {
+    color: #f1ad31;
+    transform: rotateY(0deg);
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-user-circle:hover {
+    transform: scale(1.2);
+
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-hand-paper:hover {
+    transform: rotateZ(25deg);
+}
+
+.up-div> .up-left> .three-card> .one-card> .icon> .fa-book-open:hover {
+    transform: rotateY(360deg);
+
+}
+
+.up-div> .up-left> .chart{
+    background-color: white;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 5%;
+    justify-content: space-around;
+}
+.newcategory {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.up-div> .up-right >.event{
+    background-color: rgba(1, 12, 26, 0.849);
+    color: white;
+    border-radius: 10px;
+    padding: 2%;
+    width: 95%;
+    margin-bottom: 12%;
+}
+
+.up-div> .up-right >.event>.event-header{
+    display: flex;
+    gap: 50%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.up-div> .up-right >.event>.event-pic{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: 5%;
+}
+
+.up-div> .up-right >.event > .event-pic> img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+    
+}
+.up-div> .up-right >.event > .event-pic>.name{
+    font-size: 20px;
+}
+
+.up-div> .up-right > .list-emp{
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+.up-div> .up-right > .list-emp>.list-content{
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    overflow: auto;
+}
+.up-div> .up-right > .list-emp>.list-content>.title{
+    margin-bottom: 20px;
+}
+
+.up-div> .up-right > .list-emp>.list-content>.all> {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.up-div> .up-right > .list-emp>.list-content>.all> .all-item{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    width: 93%;
+}
+
+.up-div> .up-right > .list-emp>.list-content>.all> .all-item>.emp-pic > img{
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50px;
+}
+.up-div> .up-right > .list-emp>.list-content>.all> .all-item> .emp-name>.nom{
+    font-weight: bold;
+}
+.up-div> .up-right > .list-emp>.list-content>.all> .all-item> .emp-name>.spec{
+    color: grey;
+}
+.up-div> .up-right > .list-emp>.list-content>.all> .all-item> .details>button{
+    padding: 15% 20%;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+h2 {
+    color: #1c609b;
+}
+.detailsProduit {
+    width: 700px;
+display: flex;
+flex-direction: column;
+gap: 13px;
+margin-top: 21px;
+
+}
+.updateCategory {
+    display: flex;
+    gap: 4%;
+}
